@@ -142,8 +142,8 @@ class MainActivity : Activity() {
     // ============================================================
     // ===== HELPERS ==============================================
     // ============================================================
-    private fun dp(v: Float): Int = (v * resources.displayMetrics.density).roundToInt()
-
+    private fun dp(v: Int): Int = (v * resources.displayMetrics.density).roundToInt()
+private fun dp(v: Float): Int = (v * resources.displayMetrics.density).roundToInt()
     private fun tv(text: String, sizeSp: Float, color: Int, bold: Boolean = false): TextView =
         TextView(this).apply {
             this.text = text
